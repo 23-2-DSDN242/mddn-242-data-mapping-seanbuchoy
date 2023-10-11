@@ -3,9 +3,9 @@ let maskImg=null;
 let renderCounter=0;
 
 // change these three lines as appropiate
-let sourceFile = "input_1.jpg";
-let maskFile   = "mask_1.png";
-let outputFile = "output_1.png";
+let sourceFile = "input_3.jpg";
+let maskFile   = "mask_3.png";
+let outputFile = "output_3.png";
 
 function preload() {
   sourceImg = loadImage(sourceFile);
@@ -24,7 +24,7 @@ function setup () {
 }
 
 function draw () {
-  for(let i=0;i<25000;i++) {
+  for(let i=0;i<30000;i++) {
     let x = floor(random(sourceImg.width));
     let y = floor(random(sourceImg.height));
     let pix = sourceImg.get(x, y);
@@ -37,7 +37,7 @@ function draw () {
     strokeWeight(2);
 
     if(mask[0] > 128) {
-      line(x-12, y, x+12, y);
+      line(x-10, y, x+10, y);
       let pointSize = 3;
       rect(x, y, pointSize, pointSize);
     }
@@ -56,7 +56,7 @@ function draw () {
   
 
   renderCounter = renderCounter + 1;
-  if(renderCounter > 100) {
+  if(renderCounter > 50) {
     console.log("Done!")
     noLoop();
     // uncomment this to save the result
