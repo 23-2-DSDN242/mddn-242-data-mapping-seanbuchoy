@@ -30,6 +30,7 @@ function draw () {
     let pix = sourceImg.get(x, y);
     let mask = maskImg.get(x, y);
 
+
     let gray_col = 0 + pix[1];
     stroke(gray_col);
     fill(gray_col)
@@ -41,29 +42,21 @@ function draw () {
       rect(x, y, pointSize, pointSize);
     }
     else {
-      // stroke(pix);
-      // strokeWeight(5);
-      // line(x, y-4, x, y+4);
 
       stroke(pix)
       strokeWeight(2);
-      fill(pix)
-      let pointSize = 5;
+      fill(gray_col)
+      let pointSize = 3;
       rect(x, y, pointSize, pointSize);
-      // rect(x, y, pointSize, pointSize);    
-
-      // stroke(gray_col)
-      // strokeWeight(1)
-      // line(x, y-10, x, y+10);
-
-      // set(x, y, pix);
+      // line(x, y-5, x, y+5);
 
 
     }
   }
   
+
   renderCounter = renderCounter + 1;
-  if(renderCounter > 10) {
+  if(renderCounter > 100) {
     console.log("Done!")
     noLoop();
     // uncomment this to save the result
