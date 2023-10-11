@@ -34,10 +34,10 @@ function draw () {
     let gray_col = 0 + pix[1];
     stroke(gray_col);
     fill(gray_col)
-    strokeWeight(1);
+    strokeWeight(2);
 
     if(mask[0] > 128) {
-      line(x-10, y, x+10, y);
+      line(x-12, y, x+12, y);
       let pointSize = 3;
       rect(x, y, pointSize, pointSize);
     }
