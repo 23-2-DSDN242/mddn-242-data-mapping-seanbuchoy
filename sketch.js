@@ -4,9 +4,9 @@ let renderCounter=0;
 let curLayer =0;
 
 // change these three lines as appropiate
-let sourceFile = "input_8.jpg";
-let maskFile   = "mask_8.png";
-let outputFile = "output_8.png";
+let sourceFile = "input_new3.jpg";
+let maskFile   = "mask_new3.png";
+let outputFile = "output_6.png";
 
 function preload() {
   sourceImg = loadImage(sourceFile);
@@ -117,8 +117,7 @@ else {
   }
   else {
     
-    noStroke()
-    strokeWeight(1);
+    noStroke();
     fill(pix)
     let pointSize = 3;
     rect(x, y, pointSize, pointSize);
