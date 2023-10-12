@@ -97,7 +97,7 @@ else if(curLayer == 1 && renderCounter > 50) {
     console.log("Done!")
   noLoop();
   // uncomment this to save the result
-  saveArtworkImage(outputFile);
+  // saveArtworkImage(outputFile);
 }
 
   //--end of ver 2
