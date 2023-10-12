@@ -4,9 +4,9 @@ let renderCounter=0;
 let curLayer =0;
 
 // change these three lines as appropiate
-let sourceFile = "input_3.jpg";
-let maskFile   = "mask_3.png";
-let outputFile = "output_6.png";
+let sourceFile = "input_new4.jpg";
+let maskFile   = "mask_new4.png";
+let outputFile = "output_8.png";
 
 function preload() {
   sourceImg = loadImage(sourceFile);
@@ -97,7 +97,7 @@ else if(curLayer == 1 && renderCounter > 50) {
     console.log("Done!")
   noLoop();
   // uncomment this to save the result
-  // saveArtworkImage(outputFile);
+  saveArtworkImage(outputFile);
 }
 
   //--end of ver 2
