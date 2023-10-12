@@ -26,48 +26,6 @@ function setup () {
 
 function draw () {
 
-  // //--ver 1
-
-  //   for(let i=0;i<30000;i++) {
-  //   let x = floor(random(sourceImg.width));
-  //   let y = floor(random(sourceImg.height));
-  //   let pix = sourceImg.get(x, y);
-  //   let mask = maskImg.get(x, y);
-
-
-  //   let gray_col = 0 + pix[1];
-  //   stroke(gray_col);
-  //   fill(gray_col)
-  //   strokeWeight(2);
-
-  //   if(mask[0] > 128) {
-  //     line(x-10, y, x+10, y);
-  //     let pointSize = 3;
-  //     rect(x, y, pointSize, pointSize);
-  //   }
-  //   else {
-
-  //     stroke(pix)
-  //     strokeWeight(2);
-  //     fill(gray_col)
-  //     let pointSize = 3;
-  //     rect(x, y, pointSize, pointSize);
-  //     // line(x, y-5, x, y+5);
-
-
-  //   }
-  // }
-
-  // renderCounter = renderCounter + 1;
-  // if(renderCounter > 50) {
-  //   console.log("Done!")
-  //   noLoop();
-  //   // uncomment this to save the result
-  //   // saveArtworkImage(outputFile);
-  // }
-
-
-  //--ver 2
 
 if(curLayer == 0) {
     let j = renderCounter;
